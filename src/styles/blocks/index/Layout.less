@@ -1,0 +1,100 @@
+@import "../../variables";
+@aside-width: 300px;
+
+.Layout {
+  display: flex;
+  min-width: auto;
+  padding-top: @header-height;
+  flex-direction: column;
+
+  &__header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    min-width: auto;
+    width: 100%;
+  }
+
+  &__container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: @max-content-width;
+    width: 100%;
+  }
+
+  &__navigation {
+    min-width: @navigation-width;
+
+  }
+
+  &__sticky-navigation {
+    position: sticky;
+    top: @header-height + @padding;
+    margin: 0 0 0.75em 0;
+    width: @navigation-width;
+    word-wrap: break-word;
+  }
+
+  &__wrapper {
+    max-width: @max-width-without-nav;
+    width: calc(100% - @padding);
+    box-sizing: border-box;
+    border-left: 1px solid #d6d9dc;
+    padding: @padding @padding @padding 0;
+  }
+
+  &__main-block {
+    width: calc(100% - @aside-width - @padding);
+    padding: 0;
+    float: left;
+    box-sizing: inherit;
+  }
+
+  &__aside {
+    margin-left: @padding;
+    float: right;
+    width: @aside-width;
+    box-sizing: inherit;
+  }
+
+  @media (max-width: 980px) and (min-width: 600px) {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      padding-right: 0;
+    }
+
+    &__aside {
+      margin: 0 auto;
+      float: none;
+      clear: both;
+    }
+
+    &__main-block {
+      width: auto;
+    }
+  }
+
+  @media (max-width: 600px) {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      padding-right: 0;
+      width: auto;
+    }
+
+    &__aside {
+      margin: 0 auto;
+      float: none;
+      clear: both;
+    }
+
+    &__main-block {
+      width: auto;
+    }
+    &__navigation {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "stack_overflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack-watch": "npx webpack --watch",
+    "server-watch": "npx nodemon ./server/app.js",
+    "start": "concurrently \"npm run webpack-watch\" \"npm run server-watch\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "css-loader": "^2.1.1",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "nodemon": "^1.19.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
+  },
+  "dependencies": {
+    "PubSub": "^3.6.0",
+    "body-parser": "latest",
+    "eslint": "^5.16.0",
+    "express": "^4.17.1",
+    "node": "^12.4.0",
+    "path": "^0.12.7",
+    "promise-fs": "^2.1.0",
+    "pubsub-js": "^1.7.0",
+    "ramda": "^0.26.1",
+    "sanitize-html": "^1.20.1"
+  }
+}
