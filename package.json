@@ -26,7 +26,7 @@
     "PubSub": "^3.6.0",
     "body-parser": "latest",
     "eslint": "^5.16.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "node": "^12.4.0",
     "path": "^0.12.7",
     "promise-fs": "^2.1.0",
