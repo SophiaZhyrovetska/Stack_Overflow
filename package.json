@@ -14,13 +14,13 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^4.1.0",
-    "css-loader": "^2.1.1",
+    "css-loader": "^6.7.3",
     "less": "^3.9.0",
-    "less-loader": "^4.1.0",
+    "less-loader": "^11.1.0",
     "nodemon": "^1.19.1",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.8"
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   },
   "dependencies": {
     "PubSub": "^3.6.0",
